@@ -1,0 +1,80 @@
+---
+title: "Xueting Li's Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# Xueting Li
++1 646-325-3695 | xl3495@cumc.columbia.edu / lxt03022023@163.com
+
+## Education
+**Duke Kunshan University (DKU) & Duke University**  
+Dual Degree in Data Science, Kunshan, China  
+**Bachelor’s Degree** | Aug. 2020 - Jun. 2024  
+- Core Courses: Advanced Linear Algebra, Multivariable Calculus, Numerical Analysis and Optimization, Probability, Random Variables and Stochastic Processes, Computer Architecture, ODE and Dynamic Systems, Machine Learning, Data Acquisition and Visualization, Algorithms and Databases, Programming and Data Structures, etc.  
+- Honors: Dean’s List (Spring 2023/Spring 2024)
+
+## Research & Project Experiences
+
+### Innovative Solutions to Nonlinear Partial Differential Problems
+**Project Leader** | Kunshan, China | Aug. 2023 - Present  
+- Simulated 10,000 paths according to the Feynman-Kac driving equation and established boundary conditions.  
+- Adopted the idea of American option pricing to derive functions for solving nonlinear equations.  
+- Leveraged Monte Carlo simulations to construct a multivariate regression model for uncertainty quantification.  
+
+### Comparison of Few-Shot Learning Models
+**Project Leader** | Kunshan, China | Aug. 2023 - Oct. 2023  
+- Utilized Convolutional Neural Networks (CNN) to process data from the CUB-200 dataset and implemented a relation network for few-shot learning.  
+- Constructed three relation modules to improve forecasting performance.  
+- Pre-trained models on the CUB-200 dataset, achieving higher prediction accuracy.  
+
+### Quality of Service (QOS)-Aware Reinforcement Learning-Based Computing
+**Individual Capstone Project, Supervised by Dr. Peng Sun** | Kunshan, China | Apr. 2023 - Present  
+- Built a multi-vehicle IoT system using deep reinforcement learning for computational task-offloading decisions.  
+- Classified tasks based on service level agreements (SLAs) to optimize computing capacity.  
+- Improved resource allocation in mobile vehicles to enhance utilization and reduce latency.  
+
+### Global Health Project - Cost Benefit Analysis of Chronic Non-transmissible Disease Prevention
+**Undergraduate Researcher, Instructed by Prof. Ivan Mura** | Kunshan, China | Feb. 2023 - May. 2023  
+- Collaborated with a team to conduct a cost-effectiveness analysis (CEA) using stochastic reward nets.  
+- Conducted literature reviews on various non-transmissible diseases and optimized models for CEA analysis.  
+
+### Application of Numerical Analysis and Optimization - Traffic Flow Prediction
+**Project Leader** | Kunshan, China | Jan. 2023 - Feb. 2023  
+- Utilized MATLAB to analyze traffic flow data and split it into training and test sets.  
+- Implemented Least Square Regression and Support Vector Regression modeling and evaluated results.  
+
+## Work Experience
+
+### China Merchants Bank, Nanjing Office
+**Intern Data Analyst for Online Services, FinTech Department** | Nanjing, China | Jul. 2022 - Aug. 2022  
+- Analyzed corporate clients’ data to identify potential client groups and forecast business trends.  
+
+## Extracurricular Activities
+
+### DKU Campus Engagement Office
+**Administrative Assistant of Arts Advisory Board, Student Worker** | Kunshan, China | Oct. 2021 - Mar. 2022  
+- Led event planning and organization for Arts and Music Festivals.  
+
+### DKU Undergraduate Study
+**Teaching Assistant of DKU 101** | Kunshan, China | Aug. 2021 - Oct. 2021  
+- Guided freshman students through the essentials of undergraduate life.  
+
+### DKU Student Ambassador Project
+**Core Member** | Kunshan, China | Dec. 2020 - Apr. 2021  
+- Created promotion plans and introduced DKU to prospective students.  
+
+### DKU Table Tennis Club
+**President/Vice President/Member of Sports Club Advisory Council** | Kunshan, China | Sep. 2020 - Nov. 2023  
+- Organized training sessions and community outreach for teaching table tennis.  
+
+## Technical Proficiencies & Interests
+- **Languages**: Native in Chinese, Fluent in English
+- **Coding Languages**: Skilled in Python, C, Java, R, MATLAB
+- **Software Skills**: Proficient in Adobe and Microsoft Office
+- **Interests**: Sports, Piano, Cooking, Music, Dancing
+
+

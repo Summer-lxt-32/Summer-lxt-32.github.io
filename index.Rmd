@@ -7,6 +7,13 @@ output:
     theme: cerulean
 ---
 
+<style>
+  .title {
+    font-family: 'Arial', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+</style>
+
 # Welcome! This is Xueting Li's personal website.
   
 Nice to meet you! :) My name is Xueting Li. I'm from China and now studying in the US as a first-year graduate student at Columbia Univercity Irving Medical Center. I major in Biostatistics with Public Health Data Science track. You can find information about my academic and professional journey, as well as links to my projects and professional networks in this website.
@@ -72,9 +79,8 @@ Exploring new places fuels my curiosity. I cherish the experiences of meeting ne
 
 </div>
 
-## More Info
+# More Info
 
-- [About Me](about.html)
 - [Resume](resume.html)
 - [Contact](contact.html)
 

@@ -1,0 +1,48 @@
+---
+title: "Contact Information"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+<style>
+  .title {
+    text-align: center;
+    font-size: 36px; 
+    font-family: 'Arial', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+</style>
+
+# Phone Number
+
+- **United States**: (+1) 646-325-3695
+- **China**: (+86) 147-519-20878
+
+# Emails
+- **School**: [xl3495@cumc.columbia.edu](mailto:xl3495@cumc.columbia.edu)
+- **Personal**: [lxt03022023@163.com](mailto:lxt03022023@163.com)
+
+# Professional Networks
+- **GitHub**: [Summer-lxt-32](https://github.com/Summer-lxt-32)
+- **LinkedIn**: [Xueting Li](https://www.linkedin.com/in/xueting-li-9ab4a8268/)
+
+
+# Social Media
+
+<div style="text-align: center;">
+
+  <h3>Follow Me on Social Media</h3>
+  <a href="https://www.instagram.com/lxt_32" target="_blank" style="margin: 10px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: auto;">
+  </a>
+  
+  <a href="https://www.xiaohongshu.com/user/profile/lxtxx_32" target="_blank" style="margin: 10px;">
+    <img src="pictures/xhs_logo.png" style="width: 40px; height: auto;">
+  </a>
+  <div style="text-align: center; margin-top: 20px;">
+  <p><em>Xiaohongshu is particularly popular among Chinese users.</em></p>
+</div>
+</div>

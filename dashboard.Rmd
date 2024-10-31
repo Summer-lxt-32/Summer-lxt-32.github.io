@@ -1,0 +1,130 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart A
+```{r}
+data("ny_noaa")
+
+df_1 = ny_noaa |>
+  na.omit() |>
+  mutate(
+    year = year(ymd(date)),
+    month = month(ymd(date))
+  ) |>
+  filter(
+    year == 2002
+  ) |>
+  group_by(month) |>
+  summarise(
+    mean_prcp = mean(prcp)
+  )
+
+plot_ly(data = df_1, 
+        x = ~month, 
+        y = ~mean_prcp, 
+        type = 'bar', 
+        marker = list(color = 'skyblue'),
+        name = 'Average Precipitation') |>  # Set legend name for the bar plot
+  add_trace(y = ~mean_prcp, 
+            type = 'scatter', 
+            mode = 'lines+markers', 
+            line = list(color = 'red', width = 2),
+            name = 'Trend Line') |>  # Set legend name for the trend line
+  layout(title = "Monthly Average Precipitation in 2002",
+         xaxis = list(title = "Month"),
+         yaxis = list(title = "Average Precipitation (inches)"))
+
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart B
+
+
+```{r}
+df_2 = ny_noaa |>
+  na.omit() |>
+  mutate(
+    year = year(ymd(date)),
+    month = month(ymd(date))
+  ) |>
+  filter(
+    year == 2002
+  ) |>
+  select(month, tmax, tmin)
+
+p_max = plot_ly(df_2, y = ~tmax, x = ~month, type = 'violin', name = 'Max Temperature', 
+               box = list(visible = TRUE), 
+               line = list(color = 'blue')) |>
+  layout(title = "Max Temperature by Month")
+
+
+p_min = plot_ly(df_2, y = ~tmin, x = ~month, type = 'violin', name = 'Min Temperature', 
+               box = list(visible = TRUE), 
+               line = list(color = 'green')) |>
+  layout(title = "Min Temperature by Month")
+
+
+subplot(p_max, p_min, nrows = 2, shareX = TRUE) |>
+  layout(title = "Temperature Distributions by Month in 2002", 
+         yaxis = list(title = "Temperature (°F)"))  
+  
+  
+```
+
+### Chart C
+
+```{r}
+df_3 = ny_noaa |>
+  na.omit() |>
+  mutate(
+    year = year(ymd(date)),
+    month = month(ymd(date))
+  ) |>
+  group_by(year, month) |>
+  summarise(
+    mean_snwd = mean(snwd),
+    mean_snow = mean(snow)
+  ) |>
+  filter(mean_snow!=0)
+
+plot_ly(data = df_3, 
+                x = ~mean_snow, 
+                y = ~mean_snwd, 
+                type = 'scatter', 
+                mode = 'markers',
+                text = ~paste("Year:", year, "<br>Mean Snow:", mean_snow, "inches", "<br>Mean Snow Depth:", mean_snwd, "inches"),
+                hoverinfo = 'text') %>%
+  layout(title = "Mean Snow vs. Mean Snow Depth",
+         xaxis = list(title = "Average Snow (inches)"),
+         yaxis = list(title = "Average Snow Depth (inches)"))
+
+
+
+```
+
+
+
+
+
+
+
+
+
